@@ -4,9 +4,11 @@ KMC Esolang battle 第0回 Writeup
 KMCでのEsolang大会のログです。
 システムを開発してくださったhakatashiさんに感謝。
 
-問題・解説
+跡地: http://esolang-0.wass80.xyz/contests/komabasai2018-day1/
+
+問題
 ----
-http://esolang-0.wass80.xyz/contests/komabasai2018-day1/rule/
+参照 http://esolang-0.wass80.xyz/contests/komabasai2018-day1/rule/
 
 統計
 ----
