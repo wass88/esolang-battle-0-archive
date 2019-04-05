@@ -1,0 +1,2 @@
+r=readLn
+c!x='*':(c<$[3..x])++"*";main=do y<-r;x<-r;mapM(putStrLn.(!x))$' '!y

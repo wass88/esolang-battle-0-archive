@@ -1,0 +1,8 @@
+read h w< <(tr '\n' ' ')
+a=$(printf %${w}s|tr ' ' \*)
+((h-=2))
+((w-=2))
+b=\*$(printf %${w}s)\*
+echo "$a"
+printf %${h}s|sed "s/ /$b\n/g"
+echo "$a"

@@ -1,0 +1,1 @@
+process.stdin.on('data',s=>{a=s.toString().split('\n');for(b=a[0],i=0;i<b;)console.log('*'+(i++&&i<b?' ':'*').repeat(a[1]-2)+'*')})

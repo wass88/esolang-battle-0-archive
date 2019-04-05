@@ -1,0 +1,1 @@
+with x(v,j,k)as(select v,substr(v,length(-v))-2 j,1 k from i union select v,j,k+1 from x where v-k)select printf('*%.'||j||'c*',case when(k in(1,v+0))then'*'else' 'end)from x

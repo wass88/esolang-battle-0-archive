@@ -1,0 +1,8 @@
+read h
+read w
+h=$(printf %$((h-2))s)
+w=$(printf %${w}s)
+x=${w// /*}
+echo "$x
+${h// /*${w:2}*
+}$x"

@@ -1,0 +1,5 @@
+i=input
+h=int(i())
+w=int(i())
+s='*'*w+'\n'
+print(s+('*'+' '*(w-2)+'*\n')*h+s)

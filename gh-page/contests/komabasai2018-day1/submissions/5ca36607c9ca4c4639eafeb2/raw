@@ -1,0 +1,2 @@
+`define W $write("
+module a;time w,h,t;initial begin t=$fscanf(1<<31,"%d%d",h,w);repeat(w)`W*");`W\n");repeat(h-2)begin `W*");repeat(w-2)`W ");`W*\n");end repeat(w)`W*");end endmodule

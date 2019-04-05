@@ -1,0 +1,123 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#4DA5F4"><meta name="csrf-token" content="JPknwnp1l8LtKM7SQL0SaOZJ6D7l7DAaQlGIA="><meta name="login" content="false"><meta name="google-site-verification" content="KtZjmWdS59LVbodX-T7iwVZ-05QUhf_4D4gG2HUHUUc"><meta name="contest-id" content="komabasai2018-day1"><meta data-name="contest-start" content="2019-03-28T15:00:00.000Z"><title>[[KMC Version]] 駒場祭2018 Live Codegolf Contest day1</title><script src="http://esolang-0.wass80.xyz/cdn-cgi/apps/head/1sYxoJDsJrljSy6BsZ0-ryYsFE4.js"></script><link rel="shortcut icon" href="http://esolang-0.wass80.xyz/favicon.png?d574f4fe7aacaaffc7476fb60304e3cba5dacfdb"><link rel="stylesheet" href="http://esolang-0.wass80.xyz/css/main.css?d574f4fe7aacaaffc7476fb60304e3cba5dacfdb"><style>.world {
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (orientation: portrait) {
+    .world {
+      flex-direction: column; } }
+  .world .spacer {
+    width: 200px; }
+  .world .map {
+    display: flex;
+    flex-direction: column;
+    width: 80vmin;
+    height: 80vmin; }
+    .world .map .row {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 0; }
+    .world .map .cell {
+      flex: 1 1 0;
+      position: relative;
+      background: gray;
+      margin: 3px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      font-size: 2vmin;
+      font-weight: bold; }
+      .world .map .cell.black {
+        background-color: #111111; }
+      .world .map .cell.grey {
+        background-color: #555555; }
+      .world .map .cell.white {
+        background-color: #ffffff; }
+      .world .map .cell.red {
+        background-color: #ef2011; }
+      .world .map .cell.blue {
+        background-color: #0e30ec; }
+    @media screen and (orientation: portrait) {
+      .world .map {
+        overflow: hidden; } }
+    .world .map .language-label {
+      width: 200px;
+      line-height: 1.3em;
+      font-size: 2vmin;
+      font-weight: bold;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .world .map .language-label .language-size {
+        font-size: 1.3em; }
+  .world .teams {
+    display: flex;
+    flex: 1 0 0; }
+    .world .teams.left {
+      justify-content: flex-end; }
+    .world .teams.right {
+      justify-content: flex-start; }
+    @media screen and (orientation: portrait) {
+      .world .teams {
+        flex-direction: column;
+        flex-basis: auto; } }
+    .world .teams .team {
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 10px; }
+      @media screen and (orientation: portrait) {
+        .world .teams .team {
+          width: auto;
+          height: 25px;
+          flex-direction: row-reverse;
+          margin: 0 0 5px; } }
+      .world .teams .team.red .bar {
+        background-color: #ef2011;
+        color: #ef2011; }
+      .world .teams .team.blue .bar {
+        background-color: #0e30ec;
+        color: #0e30ec; }
+      .world .teams .team .bar {
+        position: relative; }
+      .world .teams .team .count {
+        position: absolute;
+        bottom: 100%;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        font-size: 32px; }
+        @media screen and (orientation: portrait) {
+          .world .teams .team .count {
+            left: calc(100% + 5px);
+            width: auto;
+            top: 0;
+            bottom: 0;
+            line-height: 30px; } }
+      .world .teams .team .team-name {
+        position: absolute;
+        bottom: calc(100% + 35px);
+        text-align: center;
+        width: 100%;
+        font-weight: bold; }
+        @media screen and (orientation: portrait) {
+          .world .teams .team .team-name {
+            left: calc(100% + 45px);
+            width: auto;
+            top: 0;
+            bottom: 0;
+            line-height: 30px; } }
+</style></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a class="navbar-brand contest-title" href="index.html">[[KMC Version]] 駒場祭2018 Live Codegolf Contest day1 </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="http://esolang-0.wass80.xyz/contests/komabasai2018-day1/rule">Rule</a></li><li class="nav-item"><a class="nav-link" href="http://esolang-0.wass80.xyz/contests/komabasai2018-day1/submissions">Submissions</a></li></ul><ul class="navbar-nav"><li class="nav-item"><small class="nav-link">2019/03/29 00:00:00 - 2019/04/04 00:00:00</small></li></ul><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="http://esolang-0.wass80.xyz/login">Login</a></li><li class="nav-item"><a class="nav-link btn btn-outline-secondary btn-sm" href="http://esolang-0.wass80.xyz/">Top</a></li></ul></div></div><div class="container"></div>
+<div id="app"><div class="world"><div class="teams left"><div class="team red"><div class="bar" style="flex-basis: 41.6667%;"><div class="count">20</div><div class="team-name">Red</div></div></div></div><div class="map"><div class="row"><div class="cell red" data-index="0" style="color: white;"><div class="language-label"><div class="language-name">Brainfuck (esotope)</div><div class="language-size">170</div></div></div><div class="cell red" data-index="1" style="color: white;"><div class="language-label"><div class="language-name">Piet</div><div class="language-size">254</div></div></div><div class="cell red" data-index="2" style="color: white;"><div class="language-label"><div class="language-name">Befunge-98</div><div class="language-size">47</div></div></div><div class="cell blue" data-index="3" style="color: white;"><div class="language-label"><div class="language-name">Perl6</div><div class="language-size">54</div></div></div><div class="cell blue" data-index="4" style="color: white;"><div class="language-label"><div class="language-name">Evil</div><div class="language-size">125</div></div></div><div class="cell blue" data-index="5" style="color: white;"><div class="language-label"><div class="language-name">Emojicode</div><div class="language-size">168</div></div></div><div class="cell blue" data-index="6" style="color: white;"><div class="language-label"><div class="language-name">Lua</div><div class="language-size">80</div></div></div></div><div class="row"><div class="cell blue" data-index="7" style="color: white;"><div class="language-label"><div class="language-name">C (GCC)</div><div class="language-size">86</div></div></div><div class="cell blue" data-index="8" style="color: white;"><div class="language-label"><div class="language-name">Whitespace</div><div class="language-size">203</div></div></div><div class="cell blue" data-index="9" style="color: white;"><div class="language-label"><div class="language-name">Kotlin</div><div class="language-size">106</div></div></div><div class="cell blue" data-index="10" style="color: white;"><div class="language-label"><div class="language-name">Alice</div><div class="language-size">93</div></div></div><div class="cell blue" data-index="11" style="color: white;"><div class="language-label"><div class="language-name">GolfScript</div><div class="language-size">29</div></div></div><div class="cell blue" data-index="12" style="color: white;"><div class="language-label"><div class="language-name">Bash (busybox)</div><div class="language-size">71</div></div></div><div class="cell blue" data-index="13" style="color: white;"><div class="language-label"><div class="language-name">なでしこ3</div><div class="language-size">114</div></div></div></div><div class="row"><div class="cell red" data-index="14" style="color: white;"><div class="language-label"><div class="language-name">Starry</div><div class="language-size">183</div></div></div><div class="cell red" data-index="15" style="color: white;"><div class="language-label"><div class="language-name"></div><div class="language-size"></div></div></div><div class="cell red" data-index="16" style="color: white;"><div class="language-label"><div class="language-name">Hexagony</div><div class="language-size">83</div></div></div><div class="cell blue" data-index="17" style="color: white;"><div class="language-label"><div class="language-name">cmd.exe</div><div class="language-size">191</div></div></div><div class="cell red" data-index="18" style="color: white;"><div class="language-label"><div class="language-name">Unreadable</div><div class="language-size">1983</div></div></div><div class="cell red" data-index="19" style="color: white;"><div class="language-label"><div class="language-name">Python 3</div><div class="language-size">68</div></div></div><div class="cell red" data-index="20" style="color: white;"><div class="language-label"><div class="language-name">PHP 7.0</div><div class="language-size">87</div></div></div></div><div class="row"><div class="cell blue" data-index="21" style="color: white;"><div class="language-label"><div class="language-name">Make</div><div class="language-size">101</div></div></div><div class="cell blue" data-index="22" style="color: white;"><div class="language-label"><div class="language-name">Verilog (Icarus Verilog)</div><div class="language-size">183</div></div></div><div class="cell red" data-index="23" style="color: white;"><div class="language-label"><div class="language-name">x86 Assembly (nasm)</div><div class="language-size">217</div></div></div><div class="cell red" data-index="24" style="color: white;"><div class="language-label"><div class="language-name">Scheme (Guile)</div><div class="language-size">153</div></div></div><div class="cell blue" data-index="25" style="color: white;"><div class="language-label"><div class="language-name">gs2</div><div class="language-size">24</div></div></div><div class="cell blue" data-index="26" style="color: white;"><div class="language-label"><div class="language-name">Octave</div><div class="language-size">68</div></div></div><div class="cell red" data-index="27" style="color: white;"><div class="language-label"><div class="language-name">Snowman</div><div class="language-size">110</div></div></div></div><div class="row"><div class="cell blue" data-index="28" style="color: white;"><div class="language-label"><div class="language-name">Node.js</div><div class="language-size">106</div></div></div><div class="cell blue" data-index="29" style="color: white;"><div class="language-label"><div class="language-name">Ruby 2.5.0</div><div class="language-size">54</div></div></div><div class="cell blue" data-index="30" style="color: white;"><div class="language-label"><div class="language-name">Perl</div><div class="language-size">57</div></div></div><div class="cell blue" data-index="31" style="color: white;"><div class="language-label"><div class="language-name">C# (Mono)</div><div class="language-size">158</div></div></div><div class="cell grey" data-index="32" style="color: rgb(34, 34, 34);"><div class="language-label"><div class="language-name">Malbolge</div><div class="language-size"></div></div></div><div class="cell blue" data-index="33" style="color: white;"><div class="language-label"><div class="language-name"></div><div class="language-size"></div></div></div><div class="cell blue" data-index="34" style="color: white;"><div class="language-label"><div class="language-name">Vim</div><div class="language-size">25</div></div></div></div><div class="row"><div class="cell red" data-index="35" style="color: white;"><div class="language-label"><div class="language-name">SQLite3</div><div class="language-size">152</div></div></div><div class="cell red" data-index="36" style="color: white;"><div class="language-label"><div class="language-name">Java</div><div class="language-size">182</div></div></div><div class="cell red" data-index="37" style="color: white;"><div class="language-label"><div class="language-name">Rail</div><div class="language-size">170</div></div></div><div class="cell blue" data-index="38" style="color: white;"><div class="language-label"><div class="language-name">D (DMD)</div><div class="language-size">118</div></div></div><div class="cell blue" data-index="39" style="color: white;"><div class="language-label"><div class="language-name">Iwashi</div><div class="language-size">1459</div></div></div><div class="cell red" data-index="40" style="color: white;"><div class="language-label"><div class="language-name">&gt;&lt;&gt;</div><div class="language-size">70</div></div></div><div class="cell blue" data-index="41" style="color: white;"><div class="language-label"><div class="language-name">Rust</div><div class="language-size">177</div></div></div></div><div class="row"><div class="cell blue" data-index="42" style="color: white;"><div class="language-label"><div class="language-name">Haskell</div><div class="language-size">76</div></div></div><div class="cell blue" data-index="43" style="color: white;"><div class="language-label"><div class="language-name">APL</div><div class="language-size">88</div></div></div><div class="cell blue" data-index="44" style="color: white;"><div class="language-label"><div class="language-name">Crystal</div><div class="language-size">64</div></div></div><div class="cell red" data-index="45" style="color: white;"><div class="language-label"><div class="language-name">05AB1E</div><div class="language-size">24</div></div></div><div class="cell red" data-index="46" style="color: white;"><div class="language-label"><div class="language-name">Shakespeare</div><div class="language-size">1148</div></div></div><div class="cell red" data-index="47" style="color: white;"><div class="language-label"><div class="language-name">Unlambda</div><div class="language-size">8804</div></div></div><div class="cell red" data-index="48" style="color: white;"><div class="language-label"><div class="language-name">OCaml</div><div class="language-size">122</div></div></div></div></div><div class="teams right"><div class="team blue"><div class="bar" style="flex-basis: 58.3333%;"><div class="count">28</div><div class="team-name">Blue</div></div></div></div></div></div>
+<script src="http://esolang-0.wass80.xyz/socket.io/socket.io.js?d574f4fe7aacaaffc7476fb60304e3cba5dacfdb"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-43802516-9" async></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-43802516-9');</script></body></html>

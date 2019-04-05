@@ -1,0 +1,1 @@
+process.stdin.on('data',c=>{h=c[3]*10+c[4]-528;y=0;while(y++<h)console.log("*"+(y>1&y<h?" ":"*").repeat(c[0]*10+c[1]-530)+"*");})

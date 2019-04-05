@@ -1,0 +1,2 @@
+<?php for(;$h+=fgets(STDIN);$c=1)echo"*",str_repeat("* "[$c^!--$h],($w+=fgets(STDIN))-2),"*
+";

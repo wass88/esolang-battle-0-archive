@@ -1,0 +1,1 @@
+class A{public static void main(String[]a){var s=new java.util.Scanner(System.in);int x=s.nextInt();int y=s.nextInt()+1;for(int i=0;i<x*y;i++){System.out.print(i%y==y-1?"\n":i/y==0||i/y==x-1||i%y==0||i%y==y-2?"*":" ");}}}

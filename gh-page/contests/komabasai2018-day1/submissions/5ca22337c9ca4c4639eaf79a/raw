@@ -1,0 +1,4 @@
+fun r()=readLine()!!.toInt()-2
+fun main(){var h=r()
+var w=r()
+"*${" ".repeat(h)}*".map{println("*${"$it".repeat(w)}*")}}

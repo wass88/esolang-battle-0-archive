@@ -1,0 +1,12 @@
+read a
+read b
+for i in `seq 1 $a`; do
+  for j in `seq 1 $b`; do
+    if [[ ($i == 1 || $i == $a) || ($j == 1 || $j == $b) ]]; then
+      echo -n '*'
+    else
+      echo -n ' '
+    fi
+  done
+  echo
+done

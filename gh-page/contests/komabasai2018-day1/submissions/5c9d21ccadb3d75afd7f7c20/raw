@@ -1,0 +1,4 @@
+python -c "i=input
+h=int(i())
+w=int(i())-2
+for y in range(h):print('*'+' *'[y in[0,h-1]]*w+'*')"

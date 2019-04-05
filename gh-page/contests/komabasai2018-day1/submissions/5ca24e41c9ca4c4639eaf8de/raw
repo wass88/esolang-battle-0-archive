@@ -1,0 +1,1 @@
+a,b=io.read("*n","*n")for i=1,a do print("*"..(i%a>1 and" "or"*"):rep(b-2).."*")end

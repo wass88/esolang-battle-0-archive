@@ -1,0 +1,3 @@
+JS{{{var[a,b,i]=(0+require('fs').readFileSync(0)).split(`
+`)
+for(;i<a;)console.log(`*${'* '[i++&&i<a&1].repeat(b-2)}*`)}}}

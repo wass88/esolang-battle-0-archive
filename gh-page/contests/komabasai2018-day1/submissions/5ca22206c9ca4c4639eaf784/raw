@@ -1,0 +1,2 @@
+fun main(){val(a,b)=Array(2,{readLine()!!.toInt()})
+(1..a).map{println("*"+if(1<it&&it<a)" " else{"*"}.repeat(b-2)+"*")}}

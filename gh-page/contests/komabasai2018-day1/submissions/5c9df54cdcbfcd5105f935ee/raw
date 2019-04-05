@@ -1,0 +1,1 @@
+<?php fscanf(STDIN,"%d",$h);fscanf(STDIN,"%d",$w);for($y=$h;$y-->0;)echo"*".str_repeat($y>0&&$y<$h-1?" ":"*",$w-2)."*\n"?>

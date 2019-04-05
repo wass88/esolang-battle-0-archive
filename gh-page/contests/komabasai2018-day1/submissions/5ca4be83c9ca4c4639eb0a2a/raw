@@ -1,0 +1,1 @@
+h,w=io.read(2,3)for y=1,h do print("*"..(1==y%-~h and"*"or" "):rep(w-2).."*")end

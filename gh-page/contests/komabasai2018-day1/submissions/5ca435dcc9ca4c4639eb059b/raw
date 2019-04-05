@@ -1,0 +1,1 @@
+h;c;i;main(w){for(;~h;putchar(!i++?c=!~scanf("%d%d",&h,&w)*--h,i=~w,10:i%w*c?32:42));}

@@ -1,0 +1,3 @@
+<?php
+for([$a,$b]=file('php://stdin');$i<$a;)echo str_pad("
+*",$b,"* "[++$i%$a>1])."*";

@@ -1,0 +1,3 @@
+n=gets.to_i-2
+m=gets.to_i
+puts ?**m+?\n+"*#{" "*(m-2)}*\n"*n+?**m

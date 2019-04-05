@@ -1,0 +1,6 @@
+define f
+$(shell printf *%.s $$(seq 3 $(word $(1),$(strip $(STDIN)))))
+endef
+x=$(call f,2)
+r:
+	@echo -e '*$(x)*\n$(subst *,*$(subst *, ,$(x))*\n,$(call f,1))*$(x)*'

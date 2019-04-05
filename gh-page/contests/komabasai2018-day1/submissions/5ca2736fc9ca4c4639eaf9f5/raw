@@ -1,0 +1,1 @@
+y,i;main(x){for(scanf("%d%d",&y,&x),x++;i<y*x;)putchar(i++%x?i%x>2&&i/x%~-y?32:42:10);}

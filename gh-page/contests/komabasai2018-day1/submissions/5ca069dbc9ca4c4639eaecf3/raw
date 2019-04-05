@@ -1,0 +1,1 @@
+using System;class A{static int r()=>int.Parse(Console.ReadLine());static void Main(){int h=r(),w=r(),i=++w*h;for(;i-->0;)Console.Write(-~i%w>2&i>w&i<w*h-w?" ":i%w>0?"*":"\n");}}

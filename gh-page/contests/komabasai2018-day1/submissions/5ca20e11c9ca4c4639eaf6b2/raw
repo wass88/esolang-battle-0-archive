@@ -1,0 +1,2 @@
+for([a,b]=(0+require('fs').readFileSync(i=0)).split`
+`;i<a;)console.log(`*${'* '[i++>0&i<a].repeat(b-2)}*`)

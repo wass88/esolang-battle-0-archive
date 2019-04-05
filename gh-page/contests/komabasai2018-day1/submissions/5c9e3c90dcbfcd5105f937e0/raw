@@ -1,0 +1,4 @@
+let f()=input_line stdin|>int_of_string
+let rec r c n=if n=0 then""else c^r c(n-1)let w,h=f(),f()-2;;print_string(r"*"w^"
+"^r("*"^r" "(w-2)^"*
+")h^r"*"w)

@@ -1,0 +1,2 @@
+#include<stdio.h>
+w,h,y=0,x;main(){scanf("%d\n%d",&w,&h);for(;y++<h;){printf("*");for(x=0;x<w-2;x++)printf(y>1&y<h?" ":"*");printf("*\n");}}

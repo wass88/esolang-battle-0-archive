@@ -1,0 +1,1 @@
+module a;time w,h;reg t;initial begin t=$fscanf('h8000_0000,"%d%d",h,w);repeat(w)$write("*");$display();repeat(h-2)begin $write("*");repeat(w-2)$write(" ");$display("*");end repeat(w)$write("*");end endmodule

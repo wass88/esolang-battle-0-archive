@@ -1,0 +1,1 @@
+r='repeat';process.stdin.on('data',s=>[h,w]=(''+s).split('\n'),a='*'[r](w)+'\n',console.log(a+(`*${' '[r](w-2)}*\n`)[r](h-2)+a));

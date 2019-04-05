@@ -1,0 +1,2 @@
+fun main(){val(a,b)=Array(2,{readLine()!!.toInt()-2})
+"*${" ".repeat(a)}*".map{println("*${"$it".repeat(b)}*")}}

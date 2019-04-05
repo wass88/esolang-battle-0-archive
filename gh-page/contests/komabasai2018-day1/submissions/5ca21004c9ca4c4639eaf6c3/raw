@@ -1,0 +1,2 @@
+h,w=[int(input())-2for _ in"aa"]
+for c in'*'+' '*h+'*':print(f'*{c*w}*')

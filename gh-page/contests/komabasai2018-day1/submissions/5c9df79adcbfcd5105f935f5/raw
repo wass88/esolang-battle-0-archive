@@ -1,0 +1,4 @@
+JS{{{process.stdin.on('data',s=>{[h,w]=(''+s).split(`
+`),r='repeat',a='*'[r](w)+`
+`,console.log(a+`*${' '[r](w-2)}*
+`[r](h-2)+a)})}}}

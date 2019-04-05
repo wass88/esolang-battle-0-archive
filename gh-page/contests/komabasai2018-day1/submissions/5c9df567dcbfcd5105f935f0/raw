@@ -1,0 +1,4 @@
+y=gets.to_i
+x=gets.to_i
+c=?*
+puts [c*x,*[c+" "*(x-2)+c]*(y-2),c*x]

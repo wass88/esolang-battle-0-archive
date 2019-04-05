@@ -1,0 +1,1 @@
+y,i,j;main(x){for(scanf("%d%d",&y,&x);j<x||(j=puts(""),++i<y);)putchar(j++%~-x&&i%~-y?32:42);}

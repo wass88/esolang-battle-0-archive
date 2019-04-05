@@ -1,0 +1,2 @@
+#include<stdio.h>
+w,h,y=0,x;main(){scanf("%d\n%d",&h,&w);char b[w];w-=2;for(;y++<h;){memset(b,y>1&y<h?' ':'*',w);printf("*%s*\n",b);}}

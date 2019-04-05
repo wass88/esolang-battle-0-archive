@@ -1,0 +1,1 @@
+a=[];p=process.stdin;p.on('data',s=>a.push(Number(s)));p.on('end',()=>{for(i=0;i<a[0];i++)console.log('*'+(i==0||i==a[0]-1?'*':' ').repeat(a[1]-2)+'*')})

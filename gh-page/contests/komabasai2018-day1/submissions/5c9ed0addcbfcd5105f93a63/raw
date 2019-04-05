@@ -1,0 +1,1 @@
+i,w;main(h){scanf("%d%d",&w,&h);for(i=++w*h;i--;)putchar(i%w<w-1&i%w>1&i/w<h-1&&i/w?32:i%w?42:10);}

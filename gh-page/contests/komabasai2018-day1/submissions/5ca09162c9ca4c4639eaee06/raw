@@ -1,0 +1,1 @@
+import std.stdio,std.conv,std.string;void main(){for(int h=readln.chomp.to!int,w=readln.chomp.to!int,i=++w*h;i--;){write((-~i%w>2)&(i>w)&(i<w*h-w)?' ':i%w?'*':'\n');}}

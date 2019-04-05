@@ -1,0 +1,2 @@
+tr "
+" -|xargs -I{} wget google.com -O -

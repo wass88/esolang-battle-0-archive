@@ -1,0 +1,1 @@
+use std::io::*;fn main(){let i=&mut[0;9];stdin().read(i);let(h,w)=((i[0]-48)*10+i[1]-48,(i[3]-48)*10+i[4]-48);for i in 1..=h{println!("*{}*",if i==1||i==h{"*"}else{" "}.repeat(w as _))}}

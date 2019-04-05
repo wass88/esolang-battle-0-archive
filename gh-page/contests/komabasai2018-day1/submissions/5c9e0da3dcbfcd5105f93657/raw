@@ -1,0 +1,1 @@
+main(i,j,a,b){scanf("%d%d",&a,&b);for(i=a;i--;)for(j=b;j--;)printf(i*j*(a-i-1)*(b-j-1)?" ":(j?"*":"*\n"));}

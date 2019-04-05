@@ -1,0 +1,2 @@
+fun main(){val(a,b)=List(2){readLine()!!.toInt()-1}
+"${"*".padEnd(a)}*".map{println("*".padEnd(b,it)+"*")}}

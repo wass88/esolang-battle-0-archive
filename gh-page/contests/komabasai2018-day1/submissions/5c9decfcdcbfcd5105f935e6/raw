@@ -1,0 +1,4 @@
+process.stdin.on('data',s=>{[h,w]=(''+s).split(`
+`),a='*'.repeat(w)+`
+`,console.log(a+(`*${' '.repeat(w-2)}*
+`)[r](h-2)+a)})

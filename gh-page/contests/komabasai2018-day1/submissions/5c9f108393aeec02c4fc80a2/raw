@@ -1,0 +1,5 @@
+h,w=STDIN.each_line.map{|x|x.to_i-2}.to_a
+a="#{"*"*w}**
+"
+puts a+"*#{" "*w}*
+"*h+a

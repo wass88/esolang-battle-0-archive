@@ -1,0 +1,2 @@
+<?php for($y=$h=+fgets(STDIN),$w=fgets(STDIN)-2;$y;)echo"*",str_repeat("* "[$y--<$h&&$y],$w),"*
+";

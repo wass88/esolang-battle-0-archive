@@ -1,0 +1,9 @@
+read h
+read w
+a=$(printf %${w}s|sed 's/ /*/g')
+((h-=2))
+((w-=2))
+b=\*$(printf %${w}s)\*
+echo "$a"
+printf %${h}s|sed "s/ /$b\n/g"
+echo "$a"

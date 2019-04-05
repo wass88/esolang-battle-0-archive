@@ -1,0 +1,1 @@
+let p=print_endline let m=String.make let()=let a=read_int()in let b=read_int()in for i=1 to a do if i=1||i=a then p(m b '*')else p("*"^m(b-2)' '^"*")done

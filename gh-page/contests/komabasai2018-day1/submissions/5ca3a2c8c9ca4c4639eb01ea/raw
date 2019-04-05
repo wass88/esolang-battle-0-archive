@@ -1,0 +1,1 @@
+using S=System.Console;class A{static int r=>int.Parse(S.ReadLine());static void Main(){for(int h=r,w=r,y=h;;)S.Write("*"+"*\n".PadLeft(w,"* "[y%h/y%y--]));}}

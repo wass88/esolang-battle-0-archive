@@ -1,0 +1,2 @@
+w,h=int(input()),int(input())-2
+print("*"*w+f'\n*{" "*(w-2)}*\n'*h+"*"*w)

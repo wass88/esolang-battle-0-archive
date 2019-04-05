@@ -1,0 +1,2 @@
+a:
+	@echo 'c;i;main(w,h){for(scanf("%d%d",&h,&w);!i++?i=~w,h--:putchar(!i?c=10:i%w/2*h*c?32:42););}'>p.c;gcc p.c;echo $(strip $(STDIN))|./a.out

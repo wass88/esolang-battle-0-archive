@@ -1,0 +1,6 @@
+@echo off
+setlocal
+for /F "usebackq delims=" %%a in (`time /T`) do set now_time=%%a
+echo %now_time%
+endlocal
+exit /b 0

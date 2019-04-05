@@ -1,0 +1,3 @@
+a,b=int(input())-1,int(input())-2
+s='*'*-~b
+print(s+((b*' '+'*\n*')*a)[b:]+s)

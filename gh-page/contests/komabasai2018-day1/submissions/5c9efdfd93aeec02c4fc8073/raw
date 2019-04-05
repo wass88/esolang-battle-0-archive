@@ -1,0 +1,6 @@
+fun main(a:Array<String>){
+var h=readLine()!!.toInt();
+var w=readLine()!!.toInt()-2;
+var a="*".repeat(w);
+print("*$a*\n"+("*"+" ".repeat(w)+"*\n").repeat(h-2)+"*$a*");
+}

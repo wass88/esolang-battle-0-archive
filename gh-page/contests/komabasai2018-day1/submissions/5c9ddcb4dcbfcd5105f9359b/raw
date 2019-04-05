@@ -1,0 +1,2 @@
+with x(i,j)as(select v+0 as i,substr(v,instr(v,'
+')+1)as j from i),c(k)as(values(1)union select k+1 from c limit(select i from x))select printf('*%.'||(j-2)||'c*',case when(k=1 or k=i)then'*'else' 'end)from x,c

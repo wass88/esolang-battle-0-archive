@@ -1,0 +1,1 @@
+using C=System.Console;class Y{static int R=>int.Parse(C.ReadLine());static void Main(){for(int a=R,i=0;i<a;)C.Write("*"+"*\n".PadLeft(a,++i%a>1?' ':'*'));}}

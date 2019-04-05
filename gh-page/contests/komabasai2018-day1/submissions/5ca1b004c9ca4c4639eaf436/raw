@@ -1,0 +1,2 @@
+using static System.Console;class A{static int r=>int.Parse(ReadLine());static void Main(){for(int h=r,w=r-2,y=h--;y-->0;)Write($"*{"".PadLeft(w,y%h>0?' ':'*')}*
+");}}

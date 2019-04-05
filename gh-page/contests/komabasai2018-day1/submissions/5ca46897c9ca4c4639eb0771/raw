@@ -1,0 +1,5 @@
+read h
+read w
+for((;;)){
+printf \\$[++i%w/2*c?40:i>w?c=h--%h,i=0,12:52]
+}

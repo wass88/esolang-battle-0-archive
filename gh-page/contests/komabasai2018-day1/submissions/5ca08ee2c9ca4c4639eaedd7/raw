@@ -1,0 +1,17 @@
+@echo off
+setlocal enabledelayedexpansion
+SET B=^
+
+
+set/P H=
+set H=%H:~0,2%
+set W=%H:~3,5%
+set/A "X=W-2"
+for /L %%I in (1,1,%H%)do call:l %%I
+goto:EOF
+:l
+set S=*
+for /L %%K in (1,1,%X%)do (
+if "%1" == "1" (set S=*!S!) else if "%1" == "%H%" (set S=*!S!) else (set S= !S!)
+)
+echo|set/P=*%S%!B!

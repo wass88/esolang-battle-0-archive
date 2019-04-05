@@ -1,0 +1,13 @@
+set/pi=
+set/ah=%i:~0,2%-1
+set/aw=%i:~3,2%-2
+for /l %%i in (1 1 %w%)do call set s=%%s%%-
+for /l %%i in (0 1 %h%)do (set/ar=%%i%%%h%&call:o)exit
+:o
+if %r% equ 0(call:p *%s:-=*%*)else call:p "*%s:-= %*"
+exit/b
+:p
+set/p<nul=%~1^
+
+
+exit/b

@@ -1,0 +1,6 @@
+fun r()=readLine()!!.toInt()-2
+fun main(){
+var h=r()
+var w=r()
+var a="*".repeat(w+2)+"\n"
+print(a+("*"+" ".repeat(w)+"*\n").repeat(h)+a)}

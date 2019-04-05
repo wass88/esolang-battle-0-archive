@@ -1,0 +1,1 @@
+use std::io::*;fn main(){let mut b=[0;9];let(_,h,w)=(stdin().read(&mut b),(b[0]-48)*10+b[1]-48,(b[3]-48)*10+b[4]-48);for y in 0..h{print!("*");for _ in 0..w{if y==0||y==h-1{print!("*");}else{print!(" ");}}print!("*\n");}}

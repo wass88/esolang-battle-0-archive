@@ -1,0 +1,5 @@
+i=input
+h=int(i())
+w=int(i())-2
+def p(y):print(f"*{' *'[y in[0,h]]*w}*"),y and p(y-1)
+p(h)

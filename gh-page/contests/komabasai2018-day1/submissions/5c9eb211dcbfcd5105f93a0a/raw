@@ -1,0 +1,1 @@
+y,i,j;main(x){for(scanf("%d%d",&y,&x);i<y;++i)for(j=0;j<x;++j)printf(j%~-x&&i%~-y?" ":j?"*":"\n*");}

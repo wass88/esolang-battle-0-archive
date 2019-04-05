@@ -1,0 +1,6 @@
+let p=print_endline
+let m=String.make
+let a=read_int()
+let b=read_int()
+let _=for i=1 to a do
+p("*"^m(b-2)(if i=1||i=a then '*'else ' ')^"*")done

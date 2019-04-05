@@ -1,0 +1,2 @@
+let(p,m,b,a)=(print_endline,String.make,read_int()-2,read_int())let _=for i=1 to a do
+p("*"^m b(if i=1||i=a then '*'else ' ')^"*")done

@@ -1,0 +1,2 @@
+main::IO()
+main=do{[a,b]<-map ((+0).read).words <$> getContents;putStr(([1..b]>>"*")++"\n"++([1..a-2]>>('*':([1..b-2]>>" ")++"*\n"))++([1..b]>>"*"))}

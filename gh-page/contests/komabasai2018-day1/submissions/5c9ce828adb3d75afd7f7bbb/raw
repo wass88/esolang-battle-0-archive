@@ -1,0 +1,6 @@
+i=lambda:int(input())
+y=i()
+x=i()
+c="*"
+t=[c*x]
+print("\n".join(t+[c+" "*(x-2)+c]*(y-2)+t))

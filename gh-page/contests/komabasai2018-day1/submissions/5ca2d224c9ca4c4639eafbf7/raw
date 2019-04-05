@@ -1,0 +1,14 @@
+f()for((;--w>0;)){
+s=$c$s
+}
+read h
+read w
+c=' '
+f
+c="*$s*
+"
+s=
+x=${c// /*}
+w=$h
+f
+echo "$x$s$x"

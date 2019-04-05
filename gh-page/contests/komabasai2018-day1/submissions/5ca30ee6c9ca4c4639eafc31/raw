@@ -1,0 +1,2 @@
+fun main(){var a="aa".map{"*${" ".repeat(readLine()!!.toInt()-2)}*"}
+a[0].map{println(a[1].replace(' ',it))}}

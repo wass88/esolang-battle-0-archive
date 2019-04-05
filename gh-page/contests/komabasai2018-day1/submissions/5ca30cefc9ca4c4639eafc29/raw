@@ -1,0 +1,10 @@
+f(){
+read v
+printf %$((v-2))s
+}
+h=`f`
+w=`f`
+x=${w// /*}**
+echo "$x
+${h// /*$w*
+}$x"

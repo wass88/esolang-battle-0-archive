@@ -1,0 +1,3 @@
+h,w=STDIN.each_line.map(&.to_i).to_a
+a="*"*w+"\n"
+puts a+("*"+" "*(w-2)+"*\n")*(h-2)+a

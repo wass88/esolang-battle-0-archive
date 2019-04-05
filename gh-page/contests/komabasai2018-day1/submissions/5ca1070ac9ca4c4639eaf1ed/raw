@@ -1,0 +1,3 @@
+let b,a=read_int()-2,read_int()let _=for i=1 to a do
+Printf.printf"*%s*
+"(String.make b(if i=1||i=a then '*'else ' '))done

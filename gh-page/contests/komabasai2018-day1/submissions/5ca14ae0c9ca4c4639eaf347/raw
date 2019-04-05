@@ -1,0 +1,79 @@
+global _start
+section .text
+_start:
+mov ebp,esp
+sub esp,200
+mov eax,3
+mov ebx,0
+lea ecx,[ebp-16]
+mov edx,16
+int 80h
+mov eax,0
+.L0:
+movzx ebx,byte[ecx]
+cmp ebx,10
+je .L1
+mov edx,10
+mul edx
+add eax,ebx
+sub eax,48
+inc ecx
+jmp .L0
+.L1:
+mov edi,eax
+inc ecx
+mov eax,0
+.L2:
+movzx ebx,byte[ecx]
+cmp ebx,10
+je .L3
+mov edx,10
+mul edx
+add eax,ebx
+sub eax,48
+inc ecx
+jmp .L2
+.L3:
+mov esi,eax
+lea ecx,[ebp-100]
+mov eax,0
+.L4:
+cmp eax,esi
+je .L5
+mov byte[ecx+eax],42
+inc eax
+jmp .L4
+.L5:
+mov byte[ecx+esi],10
+lea ecx,[ebp-200]
+mov eax,0
+.L6:
+cmp eax,esi
+je .L7
+mov byte[ecx+eax],32
+inc eax
+jmp .L6
+.L7:
+mov byte[ecx],42
+mov byte[ecx+esi-1],42
+mov byte[ecx+esi],10
+mov eax,4
+mov ebx,1
+lea ecx,[ebp-100]
+mov edx,esi
+add edx,1
+int 80h
+lea ecx,[ebp-200]
+sub edi,2
+.L8:
+mov eax,4
+int 80h
+dec edi
+cmp edi,0
+jne .L8
+mov eax,4
+lea ecx,[ebp-100]
+int 80h
+mov eax,1
+mov ebx,0
+int 80h

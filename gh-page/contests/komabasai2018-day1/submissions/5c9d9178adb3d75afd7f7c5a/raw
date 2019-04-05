@@ -1,0 +1,1 @@
+class A{public static void main(String[]a){var s=new java.util.Scanner(System.in);int h=s.nextInt(),w=s.nextInt(),y=0;while(y++<h)System.out.println("*"+(y>1&y<h?" ":"*").repeat(w-2)+"*");}}

@@ -1,0 +1,6 @@
+JS{{{
+process.stdin.on('data',s=>{
+hw=(''+s).split("\n")
+for(y=+hw[0]+1;y-->0;)console.log("*"+(y>0&y<+hw[0]?" ":"*").repeat(+hw[1])+"*")
+})
+}}}

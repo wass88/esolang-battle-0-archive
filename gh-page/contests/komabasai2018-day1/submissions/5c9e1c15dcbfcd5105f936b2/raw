@@ -1,0 +1,10 @@
+import Data.List
+import Control.Monad
+main = do
+ y<-i
+ x<-i
+ let u=[r x c] in putStr$intercalate "\n"$u++r (y-2) ([c]++r (x-2) ' '++[c])++u
+ where
+  i=liftM read getLine::IO Int
+  c='*'
+  r=replicate

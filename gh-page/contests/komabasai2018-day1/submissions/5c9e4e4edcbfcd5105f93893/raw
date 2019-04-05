@@ -1,0 +1,1 @@
+f,h,w,v;main(){scanf("%d%d",&h,&w);while(h--){while(++v%w)putchar(1-v%w&&f&&h?'':'*');puts(f="*");}}

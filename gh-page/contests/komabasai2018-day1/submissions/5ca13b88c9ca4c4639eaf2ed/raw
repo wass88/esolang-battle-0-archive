@@ -1,0 +1,1 @@
+import std.stdio;void main(){int h,w,i;readf!"%d %d"(h,w);for(i=++w*h;i--;)write(~i%w/3&~(i/w)%h/2?' ':i%w?'*':'\n');}

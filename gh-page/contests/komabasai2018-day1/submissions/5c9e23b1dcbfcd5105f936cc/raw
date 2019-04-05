@@ -1,0 +1,4 @@
+h,w=gets.to_i,gets.to_i
+puts ?**w+"
+"+"*%s*
+"%(" "*(w-2))*h+?**w

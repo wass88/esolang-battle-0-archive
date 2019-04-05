@@ -1,0 +1,4 @@
+a,b=[int(input())-2for i in"xx"]
+s='*'*-~b
+t='*\n*'
+print(s+t+(b*' '+t)*a+s)

@@ -1,0 +1,3 @@
+my$h=get-2;say my$a="*"x my$w=get,"
+",("*{" "x($w-2)}*
+")x$h,$a

@@ -1,0 +1,1 @@
+(let* ((y (read))(x (read))(m make-string)(a append)(s (list (m (- x 1) #\*)))(k (string-join (a s (make-list (- y 2) (m (- x 2) #\ )) s)"*\n*")))(display k))

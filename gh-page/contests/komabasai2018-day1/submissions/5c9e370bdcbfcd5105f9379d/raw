@@ -1,0 +1,5 @@
+n=tonumber
+r=io.read
+h=n(r())
+w=n(r())
+for y=1,h do print("*"..string.rep((y>1 and y<h)and" "or"*",w-2).."*")end

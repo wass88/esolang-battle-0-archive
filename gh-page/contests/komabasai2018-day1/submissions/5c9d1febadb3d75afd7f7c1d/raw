@@ -1,0 +1,4 @@
+i=input
+h=int(i())
+w=int(i())-2
+for y in range(h):print(f"*{' *'[y in[0,h-1]]*w}*")

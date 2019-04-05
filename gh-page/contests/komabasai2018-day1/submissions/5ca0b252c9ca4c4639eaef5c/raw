@@ -1,0 +1,1 @@
+[h,w]=scanf("%d%d","C");s=repmat('*',h,w);s(2:h-1,2:w-1)=' ';disp(s)

@@ -1,0 +1,9 @@
+s=gets
+if s
+h=s.to_i-2
+w=s.to_i-1
+a="*"*w+"**
+"
+puts a+"*#{" "*w}*
+"*h+a
+end

@@ -1,0 +1,2 @@
+using static System.Console;class A{static void Main(){int i=0,h=int.Parse(ReadLine()),w=int.Parse(ReadLine());for(;i<h;)Write($"*{new string(i*h>i*++i?' ':'*',w-2)}*
+");}}

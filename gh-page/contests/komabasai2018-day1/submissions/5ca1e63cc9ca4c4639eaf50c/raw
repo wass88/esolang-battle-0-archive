@@ -1,0 +1,1 @@
+main=interact$foldl(\s x->init$do c<-s;'*':(c<$[3..read x])++"*\n")" ".words

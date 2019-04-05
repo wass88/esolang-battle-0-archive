@@ -1,0 +1,1 @@
+let()=let a=read_int()in let b=read_int()in for i=1 to a do if i=1||i=a then print_endline(String.make b '*')else print_endline("*"^String.make(b-2)' '^"*")done
