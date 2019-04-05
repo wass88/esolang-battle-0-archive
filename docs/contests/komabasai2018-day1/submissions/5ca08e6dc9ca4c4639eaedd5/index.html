@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#4DA5F4"><meta name="csrf-token" content="MX5KDpYh392aFtsbuyYvF1iJfV+qkuM1Tib5U="><meta name="login" content="false"><meta name="google-site-verification" content="KtZjmWdS59LVbodX-T7iwVZ-05QUhf_4D4gG2HUHUUc"><meta name="contest-id" content="komabasai2018-day1"><meta data-name="contest-start" content="2019-03-28T15:00:00.000Z"><title>Submission by @utgwkk (cmd, 272 bytes) - [[KMC Version]] 駒場祭2018 Live Codegolf Contest day1</title><link rel="shortcut icon" href="/favicon.png?d574f4fe7aacaaffc7476fb60304e3cba5dacfdb"><link rel="stylesheet" href="/css/main.css?d574f4fe7aacaaffc7476fb60304e3cba5dacfdb"></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a class="navbar-brand contest-title" href="/contests/komabasai2018-day1">[[KMC Version]] 駒場祭2018 Live Codegolf Contest day1 </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="/contests/komabasai2018-day1">Home</a></li><li class="nav-item"><a class="nav-link" href="/contests/komabasai2018-day1/rule">Rule</a></li><li class="nav-item"><a class="nav-link" href="/contests/komabasai2018-day1/submissions">Submissions</a></li></ul><ul class="navbar-nav"><li class="nav-item"><small class="nav-link">2019/03/29 00:00:00 - 2019/04/04 00:00:00</small></li></ul><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="/login">Login</a></li><li class="nav-item"><a class="nav-link btn btn-outline-secondary btn-sm" href="/">Top</a></li></ul></div></div><div class="container"></div><div class="container content"><div class="page-header"><h1><strong>cmd, 272 bytes</strong></h1><p>by<span class="team-badge team-0"></span>@utgwkk</p></div><h4>Result</h4><p><span class="badge badge-warning">WA</span></p><h4>Duration</h4><p>5037ms</p><h4>Code <small><a href="5ca08e6dc9ca4c4639eaedd5/raw">[DL]</a></small></h4><p><pre>@echo off
+setlocal enabledelayedexpansion
+set/P H=
+set H=%H:~0,2%
+set W=%H:~3,6%
+set/A &quot;X=W-2&quot;
+for /L %%I in (1,1,%H%)do call:l %%I
+goto:EOF
+:l
+set S=*
+for /L %%K in (1,1,%X%)do (
+if &quot;%1&quot; == &quot;1&quot; (set S=*!S!) else if &quot;%1&quot; == &quot;%H%&quot; (set S=*!S!) else (set S= !S!)
+)
+echo *%S%</pre></p><h4>stdin</h4><p><pre>56
+99
+</pre></p><h4>stdout</h4><p><pre>***************************************************************************************************
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+*                                                                                                 *
+***************************************************************************************************
+</pre></p><h4>stderr</h4><p><pre>wine: created the configuration directory '/root/.wine'
+Wine cannot find the FreeType font library.  To enable Wine to
+use TrueType fonts please install a version of FreeType greater than
+or equal to 2.0.5.
+http://www.freetype.org
+Wine cannot find the FreeType font library.  To enable Wine to
+use TrueType fonts please install a version of FreeType greater than
+or equal to 2.0.5.
+http://www.freetype.org
+Wine cannot find the FreeType font library.  To enable Wine to
+use TrueType fonts please install a version of FreeType greater than
+or equal to 2.0.5.
+http://www.freetype.org
+Wine cannot find the FreeType font library.  To enable Wine to
+use TrueType fonts please install a version of FreeType greater than
+or equal to 2.0.5.
+http://www.freetype.org
+0012:err:ole:marshal_object couldn't get IPSFactory buffer for interface {00000131-0000-0000-c000-000000000046}
+0012:err:ole:marshal_object couldn't get IPSFactory buffer for interface {6d5140c1-7436-11ce-8034-00aa006009fa}
+0012:err:ole:StdMarshalImpl_MarshalInterface Failed to create ifstub, hres=0x80004002
+0012:err:ole:CoMarshalInterface Failed to marshal the interface {6d5140c1-7436-11ce-8034-00aa006009fa}, 80004002
+0012:err:ole:get_local_server_stream Failed: 80004002
+0014:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0014:err:winediag:nodrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+0014:err:ole:apartment_createwindowifneeded CreateWindow failed with error 0
+000b:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+000b:err:winediag:nodrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+0014:err:ole:apartment_createwindowifneeded CreateWindow failed with error 0
+0014:err:ole:marshal_object couldn't get IPSFactory buffer for interface {00000131-0000-0000-c000-000000000046}
+0014:err:ole:apartment_createwindowifneeded CreateWindow failed with error 14007
+0014:err:ole:StdMarshalImpl_MarshalInterface Failed to create ifstub, hres=0x800736b7
+0014:err:ole:CoMarshalInterface Failed to marshal the interface {6d5140c1-7436-11ce-8034-00aa006009fa}, 800736b7
+0014:err:ole:get_local_server_stream Failed: 800736b7
+0010:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0010:err:winediag:nodrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+Wine cannot find the FreeType font library.  To enable Wine to
+use TrueType fonts please install a version of FreeType greater than
+or equal to 2.0.5.
+http://www.freetype.org
+0016:err:winediag:gnutls_initialize failed to load libgnutls, no support for encryption
+0016:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0016:err:winediag:nodrv_CreateWindow Make sure that your X server is running and that $DISPLAY is set correctly.
+0010:err:module:import_dll Loading library urlmon.dll (which is needed by L&quot;C:\\windows\\system32\\mshtml.dll&quot;) failed (error c000007b).
+0010:err:winediag:gnutls_initialize failed to load libgnutls, no support for encryption
+Wine cannot find the FreeType font library.  To enable Wine to
+use TrueType fonts please install a version of FreeType greater than
+or equal to 2.0.5.
+http://www.freetype.org
+wine: configuration in '/root/.wine' has been updated.
+Wine cannot find the FreeType font library.  To enable Wine to
+use TrueType fonts please install a version of FreeType greater than
+or equal to 2.0.5.
+http://www.freetype.org
+</pre></p></div><div class="container-fluid text-center d-flex footer"><p class="mr-auto p-2">Created by <a href="https://twitter.com/hakatashi">@hakatashi</a></p><p class="p-2"><a href="https://github.com/hakatashi/esolang-battle">GitHub</a></p><p class="p-2"><a href="https://github.com/hakatashi/esolang-battle/issues">Issues</a></p></div><script src="/socket.io/socket.io.js?d574f4fe7aacaaffc7476fb60304e3cba5dacfdb"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-43802516-9" async></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-43802516-9');</script></body></html>
