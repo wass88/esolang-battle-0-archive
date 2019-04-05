@@ -11,3 +11,4 @@ cp ~/Documents/esolang-battle/esolang-battole-0-archive/gh-page/css/{main.css?*,
 wget --convert-links http://esolang-0.wass80.xyz/contests/komabasai2018-day1 -O gh-page/contests/komabasai2018-day1/index.html
 wget --convert-links http://esolang-0.wass80.xyz/contests/komabasai2018-day1/submissions -O gh-page/contests/komabasai2018-day1/submissions/index.html
 
+cd docs/komabasai201
